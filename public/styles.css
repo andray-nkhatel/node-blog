@@ -1,0 +1,19 @@
+.ui.big {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+.ui.center > p {
+    font-size: 2em;
+  
+}
+
+
+.ui.holder{
+    font-size: 1em;
+    padding-bottom: 2em;
+    
+}
+
+.ui.text {
+    margin: 1em;
+}

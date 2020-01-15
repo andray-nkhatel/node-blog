@@ -1,0 +1,34 @@
+<%- include("partials/header") %>
+
+<div class="ui text container">
+    <div class="ui segment">
+        <h1 class="ui center aligned header">Edit Story</h1>
+    <form  action="/show/<%=data._id%>?_method=PUT" method="POST" class="ui form">
+
+        <div class="field">
+            <label>Story Name</label>
+            <input type="text" name="story[name]" value="<%=data.name%>">
+        </div>
+        <div class="field">
+            <label>Story Image Url</label>
+            <i class="images icon"></i>
+            <input type="text" name="story[image]" value="<%=data.image%>">
+    
+        </div>
+    
+        <div class="field">
+          <label>Content</label>
+          <textarea name="story[content]"><%=data.content%></textarea>
+        </div>
+
+        <button class="ui button" type="submit">Change</button>
+        
+    </form>
+    
+
+    </div>
+    
+
+</div>
+
+  <%- include("partials/footer") %>

@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+ <div class="ui text container">
+     <div class="ui segment">
+        <img class="ui huge image"  src="<%=data.image%>" >
+        <h1><%=data.name%></h1>
+        <p><%=data.created%></p>
+        <p>
+            <%=data.content%>
+        </p>
+
+        <a class="ui button" href="/edit/<%=data._id%>">Edit</a>
+     <span>
+        <form action="/delete/<%=data.id%>?_method=DELETE" method="post">
+            <button class="negative ui button">Delete</button>
+        </form>
+     </span>
+
+     </div>
+    
+     
+     
+ </div>
+
+
+
+<%- include("partials/footer") %>
